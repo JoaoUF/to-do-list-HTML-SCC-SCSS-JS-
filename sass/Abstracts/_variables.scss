@@ -1,0 +1,31 @@
+@use '../Base' as *;
+@use 'mixins' as *;
+
+:root {
+    @each $colors,
+    $shades in $COLORS {
+        @if $colors ==BRIGHT {
+
+            @each $shade,
+            $value in $shades {
+                --clr-#{$shade}: #{$value};
+            }
+        }
+    }
+
+    @each $screen-size,
+    $font-size in $TYPE-SCALE {
+        @if $screen-size ==SMALL {
+            @each $size,
+            $value in $font-size {
+                --fs-#{$size}: #{$value};
+            }
+        } @else {
+            @include mq(small) {
+                @each $size, $value in $font-size {
+                    -fs-#{$size}: #{$value};
+                }
+            }
+        }
+    }
+}
