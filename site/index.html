@@ -10,22 +10,21 @@
 <body>
     <main class="sheetpaper">
         <h6 class="sheetpaper__title">TO-DO List</h6>
-        <form action="" id="id">
-            <input type="text" class="sheetpaper__blackspace" value="" placeholder="Write a To-Do">
+        <form action="" id="todo-form">
+            <input type="text" class="sheetpaper__blackspace" value="" placeholder="Write a To-Do" id="todo-text">
             <div class="sheetpaper__line"></div>
             <div class="sheetpaper__container">
-                <div class="sheetpaper__container__todo">
-                    <input type="checkbox" class="sheetpaper__container__todo__check" name="" id="">
-                    <div class="sheetpaper__container__todo__box"></div>
+                <div class="sheetpaper__container__todo" id="0001">
+                    <input type="checkbox" class="sheetpaper__container__todo__check" name="">
                     <h6 class="sheetpaper__container__todo__text-incomplete">Take a shower</h6>
                 </div>
-                <div class="sheetpaper__container__todo">
-                    <input checked type="checkbox" class="sheetpaper__container__todo__check" name="" id="">
-                    <div class="sheetpaper__container__todo__box"></div>
+                <div class="sheetpaper__container__todo" id="0002">
+                    <input checked type="checkbox" class="sheetpaper__container__todo__check" name="">
                     <h6 class="sheetpaper__container__todo__text-complete">Do my homework</h6>
                 </div>
             </div>
         </form>
     </main>
+    <script src="../js/index.js"></script>
 </body>
 </html>
